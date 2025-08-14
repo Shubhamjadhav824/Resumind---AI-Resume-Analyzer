@@ -2,11 +2,15 @@
   "name": "ai-resume-analyzer",
   "private": true,
   "type": "module",
+  "homepage": "https://Shubhamjadhav824.github.io/Resumind---AI-Resume-Analyzer",
   "scripts": {
-    "build": "react-router build",
-    "dev": "react-router dev",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "typecheck": "react-router typegen && tsc",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@react-router/node": "^7.5.3",
@@ -27,6 +31,7 @@
     "@types/node": "^20",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4.1.4",
     "tw-animate-css": "^1.3.5",
     "typescript": "^5.8.3",
@@ -34,3 +39,4 @@
     "vite-tsconfig-paths": "^5.1.4"
   }
 }
+
